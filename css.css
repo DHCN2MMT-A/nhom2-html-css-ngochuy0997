@@ -1,0 +1,159 @@
+body{
+	background: #dcdcdc;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+	font-size: 0,9em;
+    line-height: 1,5em;
+	height: auto;
+	
+}
+
+nav {
+	position: relative;
+	width: 100%;
+	background:#69da85;
+    height: 60px;
+ 
+}
+#logo{
+	float: left;
+	width: 200px;
+	height: 300px;
+
+}
+#logo>img{
+	width: 80px;
+	float: right;
+	border-radius: 50%;
+
+}
+#menu{
+    position: relative;
+	width: 1140px;
+	float:right;
+
+}
+#menu>ul{
+    margin-top: 18px;
+	
+}
+#menu>ul>li{
+	display: inline-block;
+	margin-right: 30px;
+	width: 120px;
+	text-align: center;
+	padding:1px; 
+	border: solid 1px #fff;
+
+}
+#menu>ul>li>a{
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	text-transform: uppercase;
+}
+#menu>ul>li:hover{
+	transform: scale(1.1);
+}
+#menu>li {
+    position: relative;
+   }
+.sub-menu>li {
+    display: none;
+  }
+
+.sub-menu {
+    display: none;
+    position: absolute;
+   }
+#menu>li:hover .sub-menu {
+    display: block;
+   }
+#content{
+    margin-top:30px;
+
+
+}
+.sub-menu>li {
+    margin-left: 0 !important;
+   }
+.form ul li {
+	display: inline-block;
+}
+.form input{
+	background-color: #fff;
+	height: 20px;
+	border: none;
+	width: 120px;
+	margin-top: 5px;
+}
+nav .form{
+	float: right;
+    position: relative;
+	bottom: 58px;
+	
+}
+footer{
+	margin-top: 15px;
+	background-color:black;
+	position: relative;
+	clear: both;
+    border-bottom: 1px solid #d7d7d7;
+    top: 300px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 550px  ;
+	grid-template-rows: 300px; 1fr  ;
+	grid-template-areas: 
+	". header sidebar ."
+	". content content ."
+	". footer1 footer1 ."
+	". title2 footer2 ."
+	". xemthem xemthem ."
+
+}
+.title{
+	grid-area: title;
+}
+.header{
+	grid-area: header;
+}
+.sidebar{
+	grid-area: sidebar;
+}
+.xemthem{
+	grid-area: xemthem;
+}
+.content{
+	grid-area: content;
+}
+.footer1{
+	grid-area: footer1;
+}
+.title2{
+	grid-area: title2;
+}
+.footer2
+{
+	grid-area: footer2;
+}
+.header>img{
+	width: 500px;
+	float: left;
+
+}
+.sidebar>h4{
+	float: right;
+}
+.footer2>img{
+	height: 170px;
+	width: 500px;
+		
+}
+.xemthem{
+	text-align: center;
+	margin-top: 100px;
+	color: red;
+}
